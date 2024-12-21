@@ -1,0 +1,16 @@
+<h2>Galeria zdjęć</h2>
+
+<div class="gallery">
+  <div *ngFor="let image of images" class="gallery-item">
+    <img
+      [src]="image"
+      alt="Post Image"
+      (click)="openImage(image)"
+      class="thumbnail"
+    />
+  </div>
+</div>
+
+<div *ngIf="selectedImage" class="overlay" (click)="closeImage()">
+  <img [src]="selectedImage" alt="Selected Image" class="full-image" />
+</div>
