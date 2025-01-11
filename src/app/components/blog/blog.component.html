@@ -1,0 +1,9 @@
+@if (!emptyList) {
+<div class="gallery">
+  @for (item of (items$ | filterText: filterText); track item.id) {
+  <blog-item [image]="item.image" [text]="item.text" [id]="item.id"></blog-item>
+  }
+</div>
+} @else {
+<p class="no-results">Brak wyników spełniających kryteria wyszukiwania.</p>
+}

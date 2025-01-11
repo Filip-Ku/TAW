@@ -1,0 +1,20 @@
+<h2>Galeria zdjęć</h2>
+
+<div class="gallery">
+  @for (image of images; track $index) {
+  <div class="gallery-item">
+    <img
+      [src]="image"
+      alt="Post Image"
+      (click)="openImage(image)"
+      class="thumbnail"
+    />
+  </div>
+  }
+</div>
+
+@if (selectedImage) {
+<div class="overlay" (click)="closeImage()">
+  <img [src]="selectedImage" alt="Selected Image" class="full-image" />
+</div>
+}

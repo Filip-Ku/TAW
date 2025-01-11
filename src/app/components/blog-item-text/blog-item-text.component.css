@@ -1,0 +1,10 @@
+p {
+  margin: auto;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  width: 80%;
+}
