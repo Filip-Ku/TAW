@@ -1,0 +1,62 @@
+.add-post-form {
+  max-width: 600px;
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-post-form .form-group {
+  margin-bottom: 20px;
+}
+
+.add-post-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.add-post-form .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-post-form .form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-post-form .error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.add-post-form .submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-post-form .submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.add-post-form .submit-btn:hover {
+  background-color: #0056b3;
+}

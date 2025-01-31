@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  margin: 100px auto;
+  padding: 20px;
+  background: lightgrey;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.mt-5 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  font-size: 30px;
+  color: #777;
+  text-align: center;
+  decoration: none;
+}
+
+.navigation a {
+  color: #007bff;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}

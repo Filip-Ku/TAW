@@ -1,0 +1,27 @@
+<div class="add-post-form">
+  <h2>Dodaj nowego posta: </h2>
+  <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="title">Tytuł:</label>
+      <input id="title" formControlName="title" type="text">
+      @if (postForm.get('title')?.invalid && postForm.get('title')?.touched) {
+      <div>Tytuł jest wymagany.</div>
+      }
+    </div>
+    <div>
+      <label for="content">Treść:</label>
+      <textarea id="content" formControlName="content"></textarea>
+      @if (postForm.get('content')?.invalid && postForm.get('content')?.touched) {
+      <div>Treść jest wymagana.</div>
+      }
+    </div>
+    <div>
+      <label for="content">Zdjęcie:</label>
+      <textarea id="image" formControlName="image"></textarea>
+      @if (postForm.get('image')?.invalid && postForm.get('image')?.touched) {
+      <div>Zdjęcie jest wymagana.</div>
+      }
+    </div>
+    <button type="submit" [disabled]="postForm.invalid">Dodaj post</button>
+  </form>
+</div>

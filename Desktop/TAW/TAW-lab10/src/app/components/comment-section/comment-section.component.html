@@ -1,0 +1,20 @@
+<div class="comment-section">
+  <h3>Komentarze</h3>
+
+  <ul class="comment-list">
+    @for (comment of comments; track $index) {
+    <li class="comment-item">
+      <div class="comment-author"><strong>{{ comment.author }}</strong>:</div>
+      <div class="comment-text">{{ comment.comment }}</div>
+    </li>
+    }
+  </ul>
+
+  <div class="comment-form">
+    <input #commentInput type="text" placeholder="Komentarz" class="input-field" />
+    <button
+      (click)="addComment(commentInput.value); commentInput.value='';"
+  class="add-button">Dodaj komentarz
+    </button>
+  </div>
+</div>
